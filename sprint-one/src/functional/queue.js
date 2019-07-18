@@ -7,10 +7,9 @@ var Queue = function() {
   // Implement the methods below
 
   someInstance.enqueue = function(value) {
-    console.log(storage)
     var objArr = Object.entries(storage);
     for (var i = 0; i < objArr.length; i++){
-      storage[i + 1] = objArr[i][1]
+      storage[i + 1] = objArr[i][1];
     }
     var num = objArr.length + 1;
     storage[num] = value;
@@ -19,8 +18,8 @@ var Queue = function() {
   someInstance.dequeue = function() {
     var objArr = Object.entries(storage);
     if (objArr.length !== 0){
-      delete storage[objArr[0][0]]
-      return objArr[0][1]
+      delete storage[objArr[0][0]];
+      return objArr[0][1];
     }
   };
 
