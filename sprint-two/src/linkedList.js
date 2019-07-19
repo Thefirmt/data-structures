@@ -38,7 +38,6 @@ var LinkedList = function() {
         return true;
       }
       if (node.next !== null ){
-        console.log('burritos')
         return innerContains(node.next)
       } 
         return false;
